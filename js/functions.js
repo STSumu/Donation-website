@@ -1,4 +1,3 @@
-console.log("Functions");
 function getInputById(id){
     const inputValue=document.getElementById(id).value;
     const inputNumber=parseFloat(inputValue);
@@ -18,4 +17,3 @@ function createTransactionField(amount,donatePlace,date){
     `
     document.getElementById('transactions').appendChild(div);
 }
-createTransactionField(300,400,30);
