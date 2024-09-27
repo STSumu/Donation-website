@@ -44,38 +44,65 @@
             <div class="space-x-1 flex text-xm font-light"><img class="inline" src="assets/coin.png" alt=""><span class="hidden md:inline"><span id="account-balance">55000</span>BDT</span></div>
           </div>
     </header>
-    <main class="bg-white py-20 px-4">
-        <section class=" container mx-auto">
+    <main class="bg-white pt-10 pb-20 px-4">
+        <section class=" container mx-auto px-5 md:px-20">
          <div class="mb-5 md:mb-8 text-center space-x-4">
              <button id="donation-btn" class="btn btn-lg  bg-white border border-[#111111]/[0.1]">Home</button>
-             <!-- <button id="history-btn" class="btn btn-lg  bg-button-bg">History</button> -->
+             <button class="btn btn-lg  bg-button-bg">Blog</button>
          </div>
-         <div class="h-screen">
+         <div class="space-y-5">
+            <!-- ques-1  -->
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p class="opacity-80"><b>DOM</b>(Document Object Model) is a object like model made up of html elements.It represents the html elements as tree which helps to access,manipulate,add or remove the elements with js.</p>
                 </div>
               </div>
+              <!-- ques-2  -->
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p class="opacity-80">We can select it by querySelector or by getElementById.<br>
+                <u>Example</u>:<br>
+                <span class="text-blue-800">document.querySelector('selector'); <br>
+                    document.getElementById('id');</span></p>
                 </div>
               </div>
+              <!-- ques-3  -->
               <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                 <div class="collapse-content">
-                  <p>hello</p>
+                  <p class="opacity-80">Its an process to add event listener to childnodes through their parentNode.
+                    The event listener is added to parentNode and it is applied to all the childNodes by default.
+                  </p>
+                </div>
+              </div>
+              <!-- ques-4  -->
+              <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                  <p class="opacity-80">The steps to manipulate an element,s attribute and style are: <br>
+                <b>Step 1:</b>Access the element by getElementById or By querySelector. <br>
+                <u>Example</u>: <br>
+                <span class="text-blue-800">const element=document.getElementById('id'); <br>
+                    const element1=document.querySelector('id/class')</span><br>
+           <b>Step 2:</b> Then we can just use getAttribute,setAttribute or removeAttribute to manipulate them.We can manipulate its style by simply using element.style.theStyleToChange. <br>
+         <u>Example</u>: <br>
+         <span class="text-blue-800">element.style.color="yellow";</span>
+        <br>Or we can just add class by classList.add() and remove class by classList.remove() <br>
+     <u>Example</u>: <br>
+    <span class="text-blue-800">element.classList.add(); <br>
+        element.classList.remove();</span></p>
                 </div>
               </div>
          </div>
         </section>
     </main>
-    <footer class="footer text-base-content p-16 sticky bottom-0">
+    <footer class="footer text-base-content p-16 static bottom-0">
     </footer>
     <script src="js/pageSwitch.js"></script>
     <script src="js/functions.js"></script>
