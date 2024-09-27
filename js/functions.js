@@ -36,7 +36,11 @@ function donate(donateButton,InputField,donatePlaceBalance){
         //   get donate place balance and input amount 
           const donateAmount=getInputValueById(InputField);
           const placeBalance=getTextValueById(donatePlaceBalance);
-
+          
+          if(isNaN(donateAmount)){
+            alert("Invalid Input!Try again.");
+            return;
+          }
           //   set the main Account balance 
           const newAccountBalance=balance-donateAmount;
 
@@ -52,7 +56,8 @@ function donate(donateButton,InputField,donatePlaceBalance){
           document.getElementById(donatePlaceBalance).innerText=newBalance;
           
         // //   show transactions 
-
+        // show Modal 
+        document.getElementById('my_modal_4').showModal();
         // date 
         const today=new Date();
         const date=today.toString();

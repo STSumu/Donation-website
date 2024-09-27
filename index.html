@@ -33,7 +33,7 @@
 </head>
 
 <body class="bg-[#F9F7F3] lexend-font">
-    <header class="sticky top-0 z-10 bg-gradient-to-b from-[#F9F7F3] to-[#F9F7F3]/[0.8]">
+    <header class="sticky top-0 z-10 glass">
         <!-- navbar  -->
         <div class="navbar p-4 container mx-auto mb-10">
             <div class="navbar-start">
@@ -55,14 +55,29 @@
                 <button id="history-btn" class="btn btn-lg bg-white border border-[#111111]/[0.1]">History</button>
             </div>
             <div id="card-container" class="space-y-5 md:space-y-8">
+
+                <!-- Modal  -->
+                <dialog id="my_modal_4" class="modal text-center">
+                    <div class="modal-box w-11/12 md:w-1/2 px-2 py-4 md:p-8">
+                      <h3 class="text-3xl md:text-4xl font-extrabold">Congrates!</h3>
+                      <img class="mx-auto my-4 w-10 h-10" src="assets/coin.png" alt="">
+                      <div><p class="text-xl py-4 opacity-80">You have donated for humankind</p>
+                        <h4 class="text-xl font-bold m-0">Successfully</h4></div>
+                      <div class="modal-action justify-center">
+                        <form method="dialog">
+                          <button class="btn">Close confirmation</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>                  
                 <!-- card 1  -->
                 <div class="card lg:card-side bg-base-100 border border-[#111111]/[0.1] p-4 md:p-8 gap-8">
                     <figure class="flex-1">
                         <img src="assets/noakhali.png" alt="Album" />
                     </figure>
-                    <div class="card-body flex-1 p-0">
-                        <div><button class="space-x-1 flex text-xm font-light btn"><img class="inline"
-                                    src="assets/coin.png" alt=""><span id="noakhali-balance">55000</span> BDT</button>
+                    <div class="card-body flex-1 p-0 space-y-2 md:space-y-4">
+                        <div class="justify-start"><button class="space-x-1 flex text-xm font-light btn"><img class="inline"
+                                    src="assets/coin.png" alt=""><span id="noakhali-balance">6000</span> BDT</button>
                         </div>
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p class="font-light text-xs md:text-lg text-[#111111]/[0.7]"> The recent floods in Noakhali
@@ -70,8 +85,8 @@
                             essential supplies and to those affected by this disaster. Every contribution, big or small,
                             makes difference. Please join us in supporting the relief efforts and making a positive
                             impact on the lives of those in need.</p>
-                        <input id="noakhali-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                         <button id="noakhali-donate-btn" class="btn bg-button-bg">Donate</button>
+                        <input id="noakhali-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " autocomplete="off"/>
+                         <button id="noakhali-donate-btn" class="btn bg-button-bg">Donate now</button>
                     </div>
                 </div>
                 <!-- card 2  -->
@@ -79,9 +94,9 @@
                     <figure class="flex-1">
                         <img src="assets/feni.png" alt="Album" />
                     </figure>
-                    <div class="card-body flex-1 p-0">
+                    <div class="card-body flex-1 p-0 space-y-2 md:space-y-4">
                         <div><button class="space-x-1 flex text-xm font-light btn"><img class="inline"
-                                    src="assets/coin.png" alt=""><span id="feni-balance">55000</span> BDT</button>
+                                    src="assets/coin.png" alt=""><span id="feni-balance">4000</span> BDT</button>
                         </div>
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p class="font-light text-xs md:text-lg text-[#111111]/[0.7]"> The recent floods in Feni have
@@ -90,8 +105,8 @@
                             affected by this calamity. Together, we can offer crucial support and help rebuild lives in
                             the aftermath of this disaster. Every contribution counts towards making a real difference.
                             Please consider donating today to assist those in urgent need.</p>
-                        <input id="feni-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                        <button id="feni-donate-btn" class="btn bg-button-bg">Donate</button>
+                        <input id="feni-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " autocomplete="off"/>
+                        <button id="feni-donate-btn" class="btn bg-button-bg">Donate now</button>
 
                     </div>
                 </div>
@@ -100,9 +115,9 @@
                     <figure class="flex-1">
                         <img src="assets/quota-protest.png" alt="Album" />
                     </figure>
-                    <div class="card-body flex-1 p-0">
+                    <div class="card-body flex-1 p-0 space-y-2 md:space-y-4">
                         <div><button class="space-x-1 flex text-xm font-light btn"><img class="inline"
-                                    src="assets/coin.png" alt=""><span id="quota-balance">55000</span> BDT</button>
+                                    src="assets/coin.png" alt=""><span id="quota-balance">5000</span> BDT</button>
                         </div>
                         <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                         <p class="font-light text-xs md:text-lg text-[#111111]/[0.7]"> The recent Quota movement has
@@ -112,12 +127,12 @@
                             support they need during this challenging time. Every donation plays a vital role in
                             alleviating their suffering and aiding in their recovery. Please consider making a donation
                             to support these brave individuals in their time of need.</p>
-                        <input id="quota-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " />
-                        <button id="quota-donate-btn" class="btn bg-button-bg">Donate</button>
+                        <input id="quota-donate-amount" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full " autocomplete="off"/>
+                        <button id="quota-donate-btn" class="btn bg-button-bg">Donate now</button>
                     </div>
                 </div>
             </div>
-            <div id="transactions" class="h-screen hidden">
+            <div id="transactions" class="h-screen hidden space-y-4">
             </div>
         </section>
     </main>
