@@ -30,26 +30,47 @@
         }
       </style>
 </head>
-<body class="bg-[#F9F7F3] lexend-font">
-    <header class="sticky top-0 z-10 bg-gradient-to-b from-[#F9F7F3] to-[#F9F7F3]/[0.8]">
-        <!-- navbar  -->
-        <div class="navbar p-4 container mx-auto mb-10">
-            <div class="navbar-start">
-             <button id="blog-btn" class="p-2 md:p-4 rounded-lg bg-button-bg font-semibold">Blog</button>
-            </div>
-            <div class="navbar-center">
-              <a class="text-lg md:text-xl font-semibold space-x-4"><img class="hidden md:inline" src="assets/logo.png" alt="">Donate Bangladesh</a>
-            </div>
-            <div class="navbar-end">
-            <div class="space-x-1 flex text-xm font-light"><img class="inline" src="assets/coin.png" alt=""><span class="hidden md:inline"><span id="account-balance">55000</span>BDT</span></div>
+<body class="lexend-font">
+  <header class="sticky top-0 z-10 pb-4">
+    <!-- navbar  -->
+    <div class="flex justify-center bg-[#F9F7F3]/[0.5] backdrop-blur-lg">
+      <div class="navbar p-4 container mx-auto">
+        <div class="navbar-start">
+          <button
+            id="blog-btn"
+            class="p-2 md:p-4 rounded-lg bg-button-bg font-semibold"
+          >
+            Blog
+          </button>
+        </div>
+        <div class="navbar-center">
+          <a class="text-lg md:text-xl font-semibold space-x-4"
+            ><img class="inline" src="assets/logo.png" alt="" /><span
+              class="hidden md:inline"
+              >Donate Bangladesh</span
+            ></a
+          >
+        </div>
+        <div class="navbar-end">
+          <div class="space-x-1 flex text-xm font-light">
+            <img class="inline" src="assets/coin.png" alt="" />
+            <span id="account-balance">55000</span> BDT
           </div>
-    </header>
+        </div>
+      </div>
+    </div>
+    <div class="pt-20 text-center space-x-4 pb-8 backdrop-blur-lg">
+      
+        <button id="home-btn" class="btn btn-lg  bg-white border border-[#111111]/[0.1]">Home</button>
+        <button class="btn btn-lg  bg-button-bg">Blog</button>
+    
+    </div>
+  </header>
     <main class="bg-white pt-10 pb-20 px-4">
         <section class=" container mx-auto px-5 md:px-20">
-         <div class="mb-5 md:mb-8 text-center space-x-4">
-             <button id="home-btn" class="btn btn-lg  bg-white border border-[#111111]/[0.1]">Home</button>
-             <button class="btn btn-lg  bg-button-bg">Blog</button>
-         </div>
+        
+         <h1 class="text-5xl font-semibold mb-7">Important FAQ</h1>
+         <!-- ques container  -->
          <div class="space-y-5">
             <!-- ques-1  -->
             <div class="collapse collapse-arrow bg-base-200">
@@ -102,9 +123,8 @@
          </div>
         </section>
     </main>
-    <footer class="footer text-base-content p-16 static bottom-0">
+    <footer class="bg-[#F9F7F3] footer text-base-content p-16 static bottom-0">
     </footer>
     <script src="js/pageSwitch.js"></script>
-   
 </body>
 </html>
