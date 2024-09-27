@@ -1,20 +1,8 @@
-document.getElementById('donation-btn').addEventListener('click',function(){
-    document.getElementById('transactions').classList.add('hidden');
-    document.getElementById('card-container').classList.remove('hidden');
-    document.getElementById('donation-btn').classList.add('bg-button-bg');
-    document.getElementById('donation-btn').classList.remove('bg-white','border','border-[#111111]/[0.1]');
-    document.getElementById('history-btn').classList.remove('bg-button-bg');
-    document.getElementById('history-btn').classList.add('bg-white','border','border-[#111111]/[0.1]');
-})
-document.getElementById('history-btn').addEventListener('click',function(){
-    document.getElementById('transactions').classList.remove('hidden');
-    document.getElementById('card-container').classList.add('hidden');
-    document.getElementById('donation-btn').classList.remove('bg-button-bg');
-    document.getElementById('donation-btn').classList.add('bg-white','border','border-[#111111]/[0.1]');
-    document.getElementById('history-btn').classList.remove('bg-white','border','border-[#111111]/[0.1]');
-    document.getElementById('history-btn').classList.add('bg-button-bg');
 
-})
+// pageswitch between home and blog 
 document.getElementById('blog-btn').addEventListener('click',function(){
     window.location.href="blog.html";
+})
+document.getElementById('home-btn').addEventListener('click',function(){
+    window.location.href="index.html";
 })
